@@ -1,0 +1,19 @@
+{
+  "name": "jean-solution-util",
+  "version": "0.0.0",
+  "description": "Provides util methods",
+  "main": "dist/jean-solution-util.js",
+  "scripts": {
+    "test": "open spec/spec-runner.html in browser"
+  },
+  "keywords": [],
+  "author": "Jeremias Andris",
+  "license": "MIT",
+  "dependencies": {
+    "jean-amd": "1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/je-an/jean-solution-util.git"
+  }
+}
