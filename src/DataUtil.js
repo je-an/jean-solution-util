@@ -3,13 +3,15 @@ define([
     "Map",
     "Layer",
     "Bounding",
-    "LayerConfiguration"
+    "LayerConfiguration",
+    "Incident"
 ], function (
     List,
     Map,
     Layer,
     Bounding,
-    LayerConfiguration
+    LayerConfiguration,
+    Incident
 ) {
         return {
             /** 
@@ -75,6 +77,18 @@ define([
                     }
                 });
                 return activeMaps;
+            },
+            /**
+             * @param {Object[]} incidentArray - the untyped incident objects
+             * @returns {List<Incident>} - the incident list
+             */
+            createIncidentList: function (incidentArray) {
+                var incidents = new List({ idProperty: "id" }), incident, i, length = incidentArray.length;
+                for (i = 0; i < length; i++) {
+                    incident = incidentArray[i];
+                    incidents.addElement(new Incident(incident));
+                }
+                return incidents;
             }
         };
     });
