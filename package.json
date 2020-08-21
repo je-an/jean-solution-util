@@ -1,6 +1,6 @@
 {
   "name": "jean-solution-util",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provides util methods",
   "main": "dist/jean-solution-util.js",
   "scripts": {

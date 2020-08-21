@@ -43,6 +43,7 @@ define([
                         type: l.type,
                         url: l.url,
                         preview: l.preview,
+                        description: l.description,
                         bounding: new Bounding(l.bounding)
                     }));
                 }
